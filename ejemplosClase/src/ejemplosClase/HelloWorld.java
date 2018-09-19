@@ -16,7 +16,7 @@ public class HelloWorld {
 		
 		int doubleValue = 57;
 		
-		System.out.printf("Mi edad es %s  años (%4.2f) y mi nombre es %s\n",
+		System.out.printf("Mi edad es %s  aÃ±os (%4.2f) y mi nombre es %s\n",
 				age, numero,name );
 
 	}
