@@ -1,13 +1,13 @@
 ## Definimos las variables
-mujer = False
+mujer = True
 mex = False
 
 ## Python require más detalle para manejar los boolean
-if(mujer==True & mex==False):
+if mujer and mex:
     print("Es una mujer de México")
-elif(mujer==False & mex==True):
+elif not mujer and mex:
     print("Es un hombre de México")
-elif(mujer & mex==False):
+elif mujer and not mex:
     print("Es una mujer de otro pais")
 else:
     print("Es un hombre de otro pais")
