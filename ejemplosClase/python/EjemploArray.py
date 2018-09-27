@@ -35,3 +35,10 @@ z = copy.deepcopy(x) # this is equivalent to .clone() in Java
 print(x,y,z)
 x[3]=55
 print(x,y,z)
+
+
+## Looping through arrays
+for i in edad:
+    print(i)
+
+print("The average is",sum(edad)/len(edad))
