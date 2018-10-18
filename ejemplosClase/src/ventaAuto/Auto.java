@@ -15,4 +15,9 @@ public class Auto extends Vehiculo {
 		return (double)this.numeroPasajeros / this.puertas;
 	}
 
+	@Override
+	public double getCostoUnitario() {
+		return this.getPrecio()/(double)this.numeroPasajeros;
+	}
+
 }

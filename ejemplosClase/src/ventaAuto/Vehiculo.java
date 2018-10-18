@@ -1,9 +1,9 @@
 package ventaAuto;
 
 
-public class Vehiculo {
+public abstract class Vehiculo {
 // Variables de instancia
-	String color;
+	String color = "negro";
 	String marca;
 	String modelo;
 	final byte puertas;
@@ -24,10 +24,16 @@ public class Vehiculo {
 		this.setPrecio(p);
 		ncoches++;
 		}
+
+	public Vehiculo() {
+		this.color="negro";
+		ncoches++;
+	}
 	
 	// Metodo simple en el cual el auto 'se presenta' => imprime un texto en la consola
 	public void presentate() {
-		System.out.printf("Marca %s, Modelo: %s, Color: %s, Precio%s\n", this.marca,this.modelo,this.color,this.getPrecio());
+		System.out.printf("Marca %s, Modelo: %s, Color: %s, Precio: %s, PrecioUnitario: %s\n", 
+				this.marca,this.modelo,this.color,this.getPrecio(),this.getCostoUnitario());
 		//TODO: Tengo que hacer algo
 	}
 
@@ -46,7 +52,21 @@ public class Vehiculo {
 	}
 	
 	
+	public String getType() {
+		
+		if(this instanceof Auto) {
+			return "Coche";
+		}
+		else if(this instanceof Camion){
+			return "Camion";
+		}
+		else {
+			return "Desconocido";
+		}
+			
+	}
 	
+	public abstract double getCostoUnitario();
 	
 	
 	

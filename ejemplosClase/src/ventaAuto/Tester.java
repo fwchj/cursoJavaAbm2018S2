@@ -25,8 +25,11 @@ public class Tester {
 		ArrayList<Vehiculo> misCoches = new ArrayList<Vehiculo>();	// Hacemos un array list para todos los coches
 		
 		misCoches.add(bocho);	// Agregamos el bocho
-		misCoches.add(new Vehiculo("Amarillo","Jeep","Wrangler",5,4550.3,55000,true)); // Generamos un nuevo coche y lo agregamos directamente al AL
+		misCoches.add(new Auto("Amarillo","Jeep","Wrangler",5,4550.3,55000,true,5)); // Generamos un nuevo coche y lo agregamos directamente al AL
 		System.out.printf("Ncoches:%s\n",Vehiculo.ncoches);
+		
+		misCoches.add(new Camion("Verde","Volvo","Xtt",2,8000.0,120000,false,28000));
+		
 
 		
 		
@@ -36,8 +39,21 @@ public class Tester {
 		
 		// Hacemos un loop para que cada coche se 'presente'
 		for(Vehiculo a:misCoches) {
+			System.out.printf("%s:\n",a.getType());
 			a.presentate();
+			
 		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		
