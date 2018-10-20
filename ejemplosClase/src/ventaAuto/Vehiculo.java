@@ -25,10 +25,7 @@ public abstract class Vehiculo {
 		ncoches++;
 		}
 
-	public Vehiculo() {
-		this.color="negro";
-		ncoches++;
-	}
+	
 	
 	// Metodo simple en el cual el auto 'se presenta' => imprime un texto en la consola
 	public void presentate() {
