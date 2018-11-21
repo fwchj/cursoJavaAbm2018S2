@@ -3,9 +3,10 @@
   <Employee type="permanent">
         <Name>Jane</Name>
 		<FamilyName>Parker</FamilyName>
-		<Age>42</Age>
+
 		<Female>TRUE</Female>
-		<GrossSalary>41000.10</GrossSalary>
+		<GrossSalary>679000.10</GrossSalary>
+				<Age>48</Age>
    </Employee>
      <Employee type="permanent">
         <Name>John</Name>
