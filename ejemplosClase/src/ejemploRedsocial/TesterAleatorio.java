@@ -30,7 +30,7 @@ public class TesterAleatorio {
 		for(Individuo i:miPoblacion) {
 			System.out.printf("Los %s amigos de %s son:\n", i.amigos.size(),i.nombre);
 			for(Individuo a:i.amigos) {
-				System.out.printf("\t %s\n",a.nombre);
+				System.out.printf("\t %s\n",a.nombre); //Imprimir 
 			}
 		}
 		
