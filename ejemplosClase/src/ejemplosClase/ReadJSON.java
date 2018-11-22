@@ -65,7 +65,8 @@ public class ReadJSON {
 		} catch (ParseException e) {
 			System.out.println("Opps, I did not understand the file");
 			e.printStackTrace();
-		};
+		}
+		
 		
 
 
