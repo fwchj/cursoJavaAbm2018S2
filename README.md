@@ -1,2 +1,3 @@
 # cursoJavaAbm2018S2
-Course repository for 'Introduction to programming and agent-based modelling'. In spanish. 
+
+Repositorio para el curso 'Introduction to programming and agent-based modelling' en español.
